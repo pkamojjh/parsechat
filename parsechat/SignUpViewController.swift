@@ -60,6 +60,7 @@ class SignUpViewController: UIViewController {
             } else {
                 print("User Registered successfully")
                 // manually segue to logged in view
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
             }
         }
         
