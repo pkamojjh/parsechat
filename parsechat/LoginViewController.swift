@@ -40,8 +40,16 @@ class LoginViewController: UIViewController {
         let password = passwordLabel.text ?? ""
         
         PFUser.logInWithUsername(inBackground: username, password: password) { (user: PFUser?, error: Error?) in
+            if username == "" || password == "" {
+                let alert = UIAlertController(title: "Failed!" , message: "No password or username", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            }
             if let error = error {
                 let alert = UIAlertController(title: "Failed!" , message: "Failed to Login", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "ok", style: UIAlertActionStyle.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+                
                 print("User log in failed: \(error.localizedDescription)")
             } else {
                 print("User logged in successfully")
