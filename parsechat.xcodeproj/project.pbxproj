@@ -10,6 +10,8 @@
 		93A280767BDD88307F7DF175 /* Pods_parsechat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A24A9110D5D94BDE8BF58341 /* Pods_parsechat.framework */; };
 		9A6F0B72172C20409A15B5EA /* Pods_parsechatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87453B52875507909CF62D70 /* Pods_parsechatTests.framework */; };
 		D10C640B2028F31C00A10813 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10C640A2028F31C00A10813 /* SignUpViewController.swift */; };
+		D10C640D2028FC3000A10813 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10C640C2028FC3000A10813 /* ChatViewController.swift */; };
+		D10C640F2029007400A10813 /* ChatViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10C640E2029007400A10813 /* ChatViewCell.swift */; };
 		D1A1D7F320227D5100A2BB13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1D7F220227D5100A2BB13 /* AppDelegate.swift */; };
 		D1A1D7F520227D5100A2BB13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1D7F420227D5100A2BB13 /* ViewController.swift */; };
 		D1A1D7F820227D5100A2BB13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1A1D7F620227D5100A2BB13 /* Main.storyboard */; };
@@ -48,6 +50,8 @@
 		A24A9110D5D94BDE8BF58341 /* Pods_parsechat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_parsechat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D068A57E87465FAAB9F5FC10 /* Pods-parsechat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-parsechat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-parsechat/Pods-parsechat.debug.xcconfig"; sourceTree = "<group>"; };
 		D10C640A2028F31C00A10813 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		D10C640C2028FC3000A10813 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		D10C640E2029007400A10813 /* ChatViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewCell.swift; sourceTree = "<group>"; };
 		D1A1D7EF20227D5100A2BB13 /* parsechat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = parsechat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1A1D7F220227D5100A2BB13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1A1D7F420227D5100A2BB13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +153,8 @@
 				D1A1D7FE20227D5100A2BB13 /* Info.plist */,
 				D1A1D82020228DEF00A2BB13 /* LoginViewController.swift */,
 				D10C640A2028F31C00A10813 /* SignUpViewController.swift */,
+				D10C640C2028FC3000A10813 /* ChatViewController.swift */,
+				D10C640E2029007400A10813 /* ChatViewCell.swift */,
 			);
 			path = parsechat;
 			sourceTree = "<group>";
@@ -466,9 +472,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D10C640F2029007400A10813 /* ChatViewCell.swift in Sources */,
 				D1A1D82120228DEF00A2BB13 /* LoginViewController.swift in Sources */,
 				D1A1D7F520227D5100A2BB13 /* ViewController.swift in Sources */,
 				D10C640B2028F31C00A10813 /* SignUpViewController.swift in Sources */,
+				D10C640D2028FC3000A10813 /* ChatViewController.swift in Sources */,
 				D1A1D7F320227D5100A2BB13 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
